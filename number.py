@@ -16,3 +16,4 @@ print(f,b)
 f = str(120)
 z = float(5)
 print(type(f),z,f)
+

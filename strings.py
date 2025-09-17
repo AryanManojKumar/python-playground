@@ -56,3 +56,7 @@ print(c.strip())
 m = 505
 txt =f"am going back to {float(m)} "
 print(txt)
+
+
+k = " hello \" darkness\" my friend "
+print(k.strip())
