@@ -75,3 +75,6 @@ print(nums)
 
 guns.reverse()
 print(guns)
+
+csgo_guns = [guns.copy()]
+print(csgo_guns)
