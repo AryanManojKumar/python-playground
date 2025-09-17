@@ -78,3 +78,11 @@ print(guns)
 
 csgo_guns = [guns.copy()]
 print(csgo_guns)
+
+z =[1,2,2,3,4]
+print(z)
+
+q =[5,6,7,8]
+
+l = z+q
+print(l)
