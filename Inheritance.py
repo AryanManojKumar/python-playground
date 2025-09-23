@@ -48,4 +48,52 @@ roadster.rev()
 
 
 
+class emoplyee :
+    def __init__(self,name,yearofjoining,salary):
+        self.name = name
+        self.yearofjoining = yearofjoining
+        self.salary = salary
+
+    def work(self):
+        print(self.name,"is working")
+
+    def employeeinfo(self):
+        print(self.name,"salary is ",self.salary,"and has been working from",self.yearofjoining,"years")
+
+class manager(emoplyee):
+    def __init__(self, name, yearofjoining, salary):
+        super().__init__(name, yearofjoining, salary)   
+    
+    def work(self):
+        print(self.name,"is managing the team")
+
+    def holdmeating(self):
+        print("holding meeting")
+    
+
+class developer(emoplyee):
+    def __init__(self, name, yearofjoining, salary):
+        super().__init__(name, yearofjoining, salary)
+
+    def work(self):
+        print(self.name,"is writing the code")
+
+    def debug(self):
+        print(self.name,"is debuging the code")
+
+    
+class intern(emoplyee):
+    def __init__(self, name, yearofjoining, salary):
+        super().__init__(name, yearofjoining, salary)
+
+    def work(self):
+        print(self.name,"is learning")
+
+    def askingquestion(self):
+        print(self.name,"is asking quesiton")
        
+
+
+for x in (manager("apdillion",12,"18lpa"),developer("aryan",13,"40lpa"),intern("karan_aujila",0.5,"3lpa")):
+    x.employeeinfo()
+    x.work()
