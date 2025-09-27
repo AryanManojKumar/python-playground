@@ -99,9 +99,42 @@ def indiansinger(a):
 englishsinger(a=["travis scot","frank-ocean","rare-ocasion","playboy-carti"])
 indiansinger(["KaranAujila","diljit","sidhumoosewala","Gurindergill"])
 
+
+
+def loggger(func):
+    
+    def wrapper(*args):
+        print("loading the cal ")
+        a = func(*args)
+        print("the result is ",a)
+        return a 
+    return wrapper
+
+
+
+class caluclator:
+    def __init__(self,*args):
+        pass
+       
+
+    @loggger   
+    def adding(self,*args):
+        sum = 0
+        for x in args:
+            sum = sum+x
+        return sum
+            
     
 
+a = caluclator()
 
+print(a.adding(5,5,5,5,5))
+
+
+
+
+
+        
 
 
 
