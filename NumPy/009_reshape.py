@@ -48,3 +48,26 @@ print(weeks_total)
 
 best_week = np.argmax(weeks_total)
 print(best_week+1,"th week")
+
+
+grades = np.array([
+    [85, 92, 78, 90],
+    [88, 76, 95, 89],
+    [92, 90, 94, 91],
+    [70, 65, 80, 75],
+    [95, 100, 98, 99]
+])
+
+
+
+meanperstudent = np.mean(grades,axis=1)
+print(meanperstudent)
+
+
+topscoreperstudent = np.sum(grades,axis=1)
+print(topscoreperstudent)
+
+topper = np.argmax(topscoreperstudent)
+print("the top student is ",topper+1)
+
+
