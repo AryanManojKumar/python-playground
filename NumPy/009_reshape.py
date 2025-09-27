@@ -26,3 +26,25 @@ print(array3d.shape)
 
 newarr = array3d.reshape(1,12)
 print(newarr)
+
+
+
+sales = np.array([[120, 150, 130, 160, 200, 180, 170,
+                  140, 160, 150, 170, 180, 200, 190,
+                  150, 160, 170, 180, 190, 200, 210,
+                  160, 170, 180, 190, 200, 210, 220]])
+
+print(sales.shape)
+
+sales = sales.reshape(4,7)
+print(sales,sales.shape)
+
+total_sales = np.sum(sales)
+maxday = np.argmax(sales)+1
+print("total sales",total_sales,"most profitable day was",maxday)
+
+weeks_total = np.sum(sales,axis=1)
+print(weeks_total)
+
+best_week = np.argmax(weeks_total)
+print(best_week+1,"th week")
