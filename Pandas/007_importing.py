@@ -9,3 +9,8 @@ print(data.to_string())
 json = pd.read_json("data.json")
 
 print(json.to_string)
+
+
+
+print(data[["Name","Legendary"]].to_string())
+
